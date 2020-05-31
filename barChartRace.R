@@ -113,4 +113,4 @@ animationPlot = staticPlot + transition_time(Date) + ease_aes('cubic-in-out') +
        subtitle='\n\nAs on Date - {round(frame_time,0)}',
        caption="© Omkar Shukla (@shukla_omkar)\n Data source: covid19india.org")
 
-animate(animationPlot, fps = 10, width = 1000, height = 800, renderer = gifski_renderer("gganim.gif"))
+animate(animationPlot, fps = 20, width = 1000, height = 800, renderer = gifski_renderer("gganim.gif"))
